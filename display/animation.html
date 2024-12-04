@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .header {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            transition-property: width, height, transform, border-radius;
+            transition-duration: 2s;
+            transition-timing-function: linear;
+            display: flex;
+        }
+
+        .header:hover {
+            width: 400px;
+            height: 400px;
+            transform: rotate(180deg);
+            border-radius: 50%;
+        }
+
+        .container {
+            height: 200px;
+            width: 300px;
+            background-color: blue;
+            margin-top: 100px;
+            animation-name: container-animated;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            transition-property: height, border-raidus, transform;
+            transition-duration: 2s;
+            margin-left: 20px;
+        }
+
+        @keyframes container-animated {
+            0% {
+                background-color: blue;
+            }
+
+            50% {
+                background-color: red;
+            }
+
+            75% {
+                background-color: black;
+            }
+
+            100% {
+                background-color: pink;
+            }
+        }
+
+        .container:hover {
+            height: 200px;
+            width: 500px;
+            border-radius: 20%;
+            transform: rotate(180deg);
+        }
+
+        .container2 {
+            background-color: red;
+            height: 300px;
+            width: 400px;
+            margin-top: 20px;
+            overflow: scroll;
+            -webkit-box-shadow: -106px 33px 90px 28px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: -106px 33px 90px 28px rgba(0, 0, 0, 0.75);
+            box-shadow: -106px 33px 90px 28px rgba(0, 0, 0, 0.75);
+        }
+
+        @media (min-width: 500px) {
+            .container2 {
+                background-color: blue;
+                height: 200px;
+                width: 400px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header"></div>
+
+    <div class="container">
+
+    </div>
+    <div class="container2">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, velit nulla cum voluptate ipsa quae quo
+        consequatur corporis magni aspernatur numquam similique. Error consequatur rem tempore voluptates omnis
+        praesentium magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam rem eius corporis asperiores magni ex,
+        pariatur perspiciatis, temporibus saepe totam omnis, ipsum recusandae repellat reprehenderit et! Dolorem debitis
+        veniam fugiat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum aut velit ex fuga ducimus adipisci alias
+        temporibus, quia quo exercitationem facilis. Molestias ratione ipsam voluptate deleniti repudiandae totam natus
+        dolorum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque aut consequuntur explicabo numquam eum aliquid
+        odio in repellendus. Non laudantium nesciunt maiores fugit fuga repellendus molestiae quae alias in saepe.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, natus labore est cum beatae harum soluta
+        veritatis iusto fugit libero aliquam aut eveniet illo! Molestias obcaecati cumque mollitia aperiam architecto?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, eum cum minus officiis autem laboriosam,
+        voluptatum quas recusandae, saepe magni quis maxime ea harum quo sint nihil libero ullam iusto.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore labore reiciendis ullam iusto, beatae porro
+        obcaecati culpa repudiandae consequuntur at perferendis nam blanditiis alias placeat voluptates nisi harum,
+        numquam quibusdam?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis commodi, earum ad consequatur ullam qui
+        perferendis, numquam deserunt voluptatum vel dicta optio totam porro odio architecto facere aliquid, corrupti
+        nihil.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis commodi doloribus sapiente expedita
+        molestias sed voluptate placeat cumque atque quisquam, laborum, rem ratione totam ab reiciendis eos! Fuga, id
+        maxime?
+
+
+    </div>
+</body>
+
+</html>
